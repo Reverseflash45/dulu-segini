@@ -1,0 +1,546 @@
+{
+ "dibangun": "2026-10-17",
+ "tahunAwal": 1967,
+ "tahunAkhir": 2025,
+ "sumber": {
+  "wdi": {
+   "ihk": "2026-10-08",
+   "kurs": "2026-10-08",
+   "pdbKapita": "2026-10-08"
+  },
+  "pinkSheet": "Updated on September 02, 2026"
+ },
+ "baris": [
+  {
+   "tahun": 1967,
+   "ihk": 0.388928,
+   "inflasi": 106.0,
+   "kurs": 149.5833,
+   "pdbKapita": 7959,
+   "emasUsdOz": 35.0,
+   "emasRpGram": 168.32
+  },
+  {
+   "tahun": 1968,
+   "ihk": 0.890034,
+   "inflasi": 128.843,
+   "kurs": 296.2917,
+   "pdbKapita": 19157,
+   "emasUsdOz": 39.0,
+   "emasRpGram": 371.51
+  },
+  {
+   "tahun": 1969,
+   "ihk": 1.02781,
+   "inflasi": 15.48,
+   "kurs": 326.0,
+   "pdbKapita": 24156,
+   "emasUsdOz": 41.0,
+   "emasRpGram": 429.73
+  },
+  {
+   "tahun": 1970,
+   "ihk": 1.155253,
+   "inflasi": 12.399,
+   "kurs": 362.8333,
+   "pdbKapita": 28878,
+   "emasUsdOz": 36.0,
+   "emasRpGram": 419.95
+  },
+  {
+   "tahun": 1971,
+   "ihk": 1.204164,
+   "inflasi": 4.234,
+   "kurs": 391.875,
+   "pdbKapita": 30900,
+   "emasUsdOz": 41.0,
+   "emasRpGram": 516.56
+  },
+  {
+   "tahun": 1972,
+   "ihk": 1.282696,
+   "inflasi": 6.522,
+   "kurs": 415.0,
+   "pdbKapita": 37398,
+   "emasUsdOz": 58.0,
+   "emasRpGram": 773.87
+  },
+  {
+   "tahun": 1973,
+   "ihk": 1.680869,
+   "inflasi": 31.042,
+   "kurs": 415.0,
+   "pdbKapita": 53903,
+   "emasUsdOz": 97.0,
+   "emasRpGram": 1294.23
+  },
+  {
+   "tahun": 1974,
+   "ihk": 2.361483,
+   "inflasi": 40.492,
+   "kurs": 415.0,
+   "pdbKapita": 83295,
+   "emasUsdOz": 159.0,
+   "emasRpGram": 2121.47
+  },
+  {
+   "tahun": 1975,
+   "ihk": 2.814078,
+   "inflasi": 19.166,
+   "kurs": 415.0,
+   "pdbKapita": 95890,
+   "emasUsdOz": 161.0,
+   "emasRpGram": 2148.15
+  },
+  {
+   "tahun": 1976,
+   "ihk": 3.372072,
+   "inflasi": 19.829,
+   "kurs": 415.0,
+   "pdbKapita": 114421,
+   "emasUsdOz": 125.0,
+   "emasRpGram": 1667.82
+  },
+  {
+   "tahun": 1977,
+   "ihk": 3.744756,
+   "inflasi": 11.052,
+   "kurs": 415.0,
+   "pdbKapita": 137228,
+   "emasUsdOz": 148.0,
+   "emasRpGram": 1974.7
+  },
+  {
+   "tahun": 1978,
+   "ihk": 4.048553,
+   "inflasi": 8.113,
+   "kurs": 442.0454,
+   "pdbKapita": 160236,
+   "emasUsdOz": 193.0,
+   "emasRpGram": 2742.93
+  },
+  {
+   "tahun": 1979,
+   "ihk": 4.705745,
+   "inflasi": 16.233,
+   "kurs": 623.0555,
+   "pdbKapita": 220204,
+   "emasUsdOz": 307.0,
+   "emasRpGram": 6149.73
+  },
+  {
+   "tahun": 1980,
+   "ihk": 5.554446,
+   "inflasi": 18.035,
+   "kurs": 626.994,
+   "pdbKapita": 305106,
+   "emasUsdOz": 608.0,
+   "emasRpGram": 12256.26
+  },
+  {
+   "tahun": 1981,
+   "ihk": 6.235749,
+   "inflasi": 12.266,
+   "kurs": 631.7567,
+   "pdbKapita": 354310,
+   "emasUsdOz": 460.0,
+   "emasRpGram": 9343.27
+  },
+  {
+   "tahun": 1982,
+   "ihk": 6.824742,
+   "inflasi": 9.445,
+   "kurs": 661.4207,
+   "pdbKapita": 382133,
+   "emasUsdOz": 376.0,
+   "emasRpGram": 7995.7
+  },
+  {
+   "tahun": 1983,
+   "ihk": 7.630044,
+   "inflasi": 11.8,
+   "kurs": 909.2648,
+   "pdbKapita": 461616,
+   "emasUsdOz": 423.0,
+   "emasRpGram": 12365.79
+  },
+  {
+   "tahun": 1984,
+   "ihk": 8.427768,
+   "inflasi": 10.455,
+   "kurs": 1025.9448,
+   "pdbKapita": 533257,
+   "emasUsdOz": 360.0,
+   "emasRpGram": 11874.56
+  },
+  {
+   "tahun": 1985,
+   "ihk": 8.825941,
+   "inflasi": 4.725,
+   "kurs": 1110.58,
+   "pdbKapita": 567952,
+   "emasUsdOz": 318.0,
+   "emasRpGram": 11354.5
+  },
+  {
+   "tahun": 1986,
+   "ihk": 9.339846,
+   "inflasi": 5.823,
+   "kurs": 1282.56,
+   "pdbKapita": 602591,
+   "emasUsdOz": 368.0,
+   "emasRpGram": 15174.58
+  },
+  {
+   "tahun": 1987,
+   "ihk": 10.206457,
+   "inflasi": 9.279,
+   "kurs": 1643.8483,
+   "pdbKapita": 719360,
+   "emasUsdOz": 446.0,
+   "emasRpGram": 23571.52
+  },
+  {
+   "tahun": 1988,
+   "ihk": 11.027603,
+   "inflasi": 8.045,
+   "kurs": 1685.7042,
+   "pdbKapita": 803510,
+   "emasUsdOz": 437.0,
+   "emasRpGram": 23683.93
+  },
+  {
+   "tahun": 1989,
+   "ihk": 11.735084,
+   "inflasi": 6.416,
+   "kurs": 1770.0592,
+   "pdbKapita": 927765,
+   "emasUsdOz": 381.0,
+   "emasRpGram": 21682.22
+  },
+  {
+   "tahun": 1990,
+   "ihk": 12.652673,
+   "inflasi": 7.819,
+   "kurs": 1842.8133,
+   "pdbKapita": 1065918,
+   "emasUsdOz": 383.0,
+   "emasRpGram": 22691.92
+  },
+  {
+   "tahun": 1991,
+   "ihk": 13.844437,
+   "inflasi": 9.419,
+   "kurs": 1950.3175,
+   "pdbKapita": 1217755,
+   "emasUsdOz": 362.0,
+   "emasRpGram": 22698.91
+  },
+  {
+   "tahun": 1992,
+   "ihk": 14.886025,
+   "inflasi": 7.524,
+   "kurs": 2029.9208,
+   "pdbKapita": 1367498,
+   "emasUsdOz": 344.0,
+   "emasRpGram": 22450.63
+  },
+  {
+   "tahun": 1993,
+   "ihk": 16.325788,
+   "inflasi": 9.672,
+   "kurs": 2087.1039,
+   "pdbKapita": 1705985,
+   "emasUsdOz": 360.0,
+   "emasRpGram": 24156.7
+  },
+  {
+   "tahun": 1994,
+   "ihk": 17.718704,
+   "inflasi": 8.532,
+   "kurs": 2160.7537,
+   "pdbKapita": 1944230,
+   "emasUsdOz": 384.0,
+   "emasRpGram": 26676.42
+  },
+  {
+   "tahun": 1995,
+   "ihk": 19.387859,
+   "inflasi": 9.42,
+   "kurs": 2248.608,
+   "pdbKapita": 2273843,
+   "emasUsdOz": 384.0,
+   "emasRpGram": 27761.06
+  },
+  {
+   "tahun": 1996,
+   "ihk": 20.933708,
+   "inflasi": 7.973,
+   "kurs": 2342.2963,
+   "pdbKapita": 2620849,
+   "emasUsdOz": 388.0,
+   "emasRpGram": 29218.95
+  },
+  {
+   "tahun": 1997,
+   "ihk": 22.237072,
+   "inflasi": 6.226,
+   "kurs": 2909.38,
+   "pdbKapita": 3039158,
+   "emasUsdOz": 331.0,
+   "emasRpGram": 30961.32
+  },
+  {
+   "tahun": 1998,
+   "ihk": 35.234872,
+   "inflasi": 58.451,
+   "kurs": 10013.6225,
+   "pdbKapita": 4554964,
+   "emasUsdOz": 294.0,
+   "emasRpGram": 94651.96
+  },
+  {
+   "tahun": 1999,
+   "ihk": 42.45021,
+   "inflasi": 20.478,
+   "kurs": 7855.15,
+   "pdbKapita": 5162946,
+   "emasUsdOz": 279.0,
+   "emasRpGram": 70461.15
+  },
+  {
+   "tahun": 2000,
+   "ihk": 44.016037,
+   "inflasi": 3.689,
+   "kurs": 8421.775,
+   "pdbKapita": 6431804,
+   "emasUsdOz": 279.0,
+   "emasRpGram": 75543.81
+  },
+  {
+   "tahun": 2001,
+   "ihk": 49.077933,
+   "inflasi": 11.5,
+   "kurs": 10260.85,
+   "pdbKapita": 7514093,
+   "emasUsdOz": 271.0,
+   "emasRpGram": 89401.27
+  },
+  {
+   "tahun": 2002,
+   "ihk": 54.918266,
+   "inflasi": 11.9,
+   "kurs": 9311.1917,
+   "pdbKapita": 8203187,
+   "emasUsdOz": 310.0,
+   "emasRpGram": 92802.15
+  },
+  {
+   "tahun": 2003,
+   "ihk": 58.629265,
+   "inflasi": 6.757,
+   "kurs": 8577.1333,
+   "pdbKapita": 8947756,
+   "emasUsdOz": 364.0,
+   "emasRpGram": 100377.09
+  },
+  {
+   "tahun": 2004,
+   "ihk": 62.18458,
+   "inflasi": 6.064,
+   "kurs": 8938.85,
+   "pdbKapita": 10072654,
+   "emasUsdOz": 409.0,
+   "emasRpGram": 117542.8
+  },
+  {
+   "tahun": 2005,
+   "ihk": 68.684858,
+   "inflasi": 10.453,
+   "kurs": 9704.7417,
+   "pdbKapita": 12016552,
+   "emasUsdOz": 445.0,
+   "emasRpGram": 138846.54
+  },
+  {
+   "tahun": 2006,
+   "ihk": 77.68853,
+   "inflasi": 13.109,
+   "kurs": 9159.3167,
+   "pdbKapita": 14273106,
+   "emasUsdOz": 604.0,
+   "emasRpGram": 177865.24
+  },
+  {
+   "tahun": 2007,
+   "ihk": 82.665693,
+   "inflasi": 6.407,
+   "kurs": 9141.0,
+   "pdbKapita": 16666052,
+   "emasUsdOz": 697.0,
+   "emasRpGram": 204841.31
+  },
+  {
+   "tahun": 2008,
+   "ihk": 91.119638,
+   "inflasi": 10.227,
+   "kurs": 9698.9625,
+   "pdbKapita": 20605978,
+   "emasUsdOz": 872.0,
+   "emasRpGram": 271914.79
+  },
+  {
+   "tahun": 2009,
+   "ihk": 95.116521,
+   "inflasi": 4.386,
+   "kurs": 10389.9375,
+   "pdbKapita": 23049925,
+   "emasUsdOz": 973.0,
+   "emasRpGram": 325025.05
+  },
+  {
+   "tahun": 2010,
+   "ihk": 100.0,
+   "inflasi": 5.134,
+   "kurs": 9090.4333,
+   "pdbKapita": 27868391,
+   "emasUsdOz": 1225.0,
+   "emasRpGram": 358023.67
+  },
+  {
+   "tahun": 2011,
+   "ihk": 105.356048,
+   "inflasi": 5.356,
+   "kurs": 8770.4333,
+   "pdbKapita": 31393454,
+   "emasUsdOz": 1569.0,
+   "emasRpGram": 442420.31
+  },
+  {
+   "tahun": 2012,
+   "ihk": 109.864776,
+   "inflasi": 4.28,
+   "kurs": 9386.6292,
+   "pdbKapita": 34094795,
+   "emasUsdOz": 1670.0,
+   "emasRpGram": 503984.52
+  },
+  {
+   "tahun": 2013,
+   "ihk": 116.909848,
+   "inflasi": 6.412,
+   "kurs": 10461.24,
+   "pdbKapita": 37311088,
+   "emasUsdOz": 1411.0,
+   "emasRpGram": 474571.05
+  },
+  {
+   "tahun": 2014,
+   "ihk": 124.38615,
+   "inflasi": 6.395,
+   "kurs": 11865.2113,
+   "pdbKapita": 40829000,
+   "emasUsdOz": 1266.0,
+   "emasRpGram": 482947.86
+  },
+  {
+   "tahun": 2015,
+   "ihk": 132.300991,
+   "inflasi": 6.363,
+   "kurs": 13389.4129,
+   "pdbKapita": 44027372,
+   "emasUsdOz": 1161.0,
+   "emasRpGram": 499786.84
+  },
+  {
+   "tahun": 2016,
+   "ihk": 136.965665,
+   "inflasi": 3.526,
+   "kurs": 13308.3268,
+   "pdbKapita": 46864866,
+   "emasUsdOz": 1249.0,
+   "emasRpGram": 534412.93
+  },
+  {
+   "tahun": 2017,
+   "ihk": 142.182411,
+   "inflasi": 3.809,
+   "kurs": 13380.8339,
+   "pdbKapita": 50832226,
+   "emasUsdOz": 1258.0,
+   "emasRpGram": 541196.38
+  },
+  {
+   "tahun": 2018,
+   "ihk": 146.729899,
+   "inflasi": 3.198,
+   "kurs": 14236.9388,
+   "pdbKapita": 54968159,
+   "emasUsdOz": 1269.0,
+   "emasRpGram": 580857.1
+  },
+  {
+   "tahun": 2019,
+   "ihk": 151.176673,
+   "inflasi": 3.031,
+   "kurs": 14147.6714,
+   "pdbKapita": 58103759,
+   "emasUsdOz": 1392.0,
+   "emasRpGram": 633162.61
+  },
+  {
+   "tahun": 2020,
+   "ihk": 154.079016,
+   "inflasi": 1.92,
+   "kurs": 14582.2035,
+   "pdbKapita": 56195480,
+   "emasUsdOz": 1770.0,
+   "emasRpGram": 829826.85
+  },
+  {
+   "tahun": 2021,
+   "ihk": 156.48277,
+   "inflasi": 1.56,
+   "kurs": 14308.1439,
+   "pdbKapita": 61341490,
+   "emasUsdOz": 1800.0,
+   "emasRpGram": 828031.52
+  },
+  {
+   "tahun": 2022,
+   "ihk": 163.069857,
+   "inflasi": 4.209,
+   "kurs": 14849.8539,
+   "pdbKapita": 70252206,
+   "emasUsdOz": 1801.0,
+   "emasRpGram": 859858.44
+  },
+  {
+   "tahun": 2023,
+   "ihk": 169.05352,
+   "inflasi": 3.669,
+   "kurs": 15236.8847,
+   "pdbKapita": 74299610,
+   "emasUsdOz": 1943.0,
+   "emasRpGram": 951831.43
+  },
+  {
+   "tahun": 2024,
+   "ihk": 172.741444,
+   "inflasi": 2.182,
+   "kurs": 15855.4483,
+   "pdbKapita": 78095003,
+   "emasUsdOz": 2388.0,
+   "emasRpGram": 1217317.63
+  },
+  {
+   "tahun": 2025,
+   "ihk": 176.046566,
+   "inflasi": 1.913,
+   "kurs": 16477.8652,
+   "pdbKapita": 83371834,
+   "emasUsdOz": 3442.0,
+   "emasRpGram": 1823487.85
+  }
+ ]
+}

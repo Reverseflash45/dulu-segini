@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Metode &amp; data — Dulu Segini</title>
+    <meta
+      name="description"
+      content="Cara Dulu Segini menghitung daya beli rupiah: Indeks Harga Konsumen World Bank, kurs resmi, harga emas Pink Sheet, rumus, dan batasannya."
+    />
+    <meta property="og:title" content="Metode & data — Dulu Segini" />
+    <meta property="og:image" content="/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/ikon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="kepala">
+      <a class="merek" href="/" aria-label="Dulu Segini, beranda">
+        <span class="cap" aria-hidden="true">Rp</span>
+        <span>Dulu <em>Segini</em></span>
+      </a>
+      <nav class="navigasi"><a href="/">← Kembali ke kalkulator</a></nav>
+    </header>
+
+    <main class="metode">
+      <p class="label">Metode &amp; data</p>
+      <h1>Cara <em>menghitungnya</em></h1>
+
+      <p class="lead">
+        Dulu Segini membandingkan <strong>daya beli</strong>, bukan angka. Rp1.000 di tahun 1995 dan Rp9.080 di tahun 2025
+        dianggap setara karena keduanya bisa membeli keranjang belanja rata-rata yang sama.
+      </p>
+
+      <h2>Rumus</h2>
+      <div class="rumus">
+        <p><span>rupiah tahun B</span> = <span>rupiah tahun A</span> × IHK<sub>B</sub> ÷ IHK<sub>A</sub></p>
+      </div>
+      <p>
+        IHK adalah Indeks Harga Konsumen: harga rata-rata sekeranjang barang dan jasa yang dibeli rumah tangga, dengan tahun
+        2010 sebagai 100. Inflasi tahunan di grafik dihitung dari indeks yang sama, (IHK<sub>t</sub> ÷ IHK<sub>t−1</sub> − 1) ×
+        100%, supaya semua angka di situs ini konsisten satu sama lain.
+      </p>
+
+      <h2>Tiga skenario tabungan</h2>
+      <dl class="daftar-skenario">
+        <dt>Tunai</dt>
+        <dd>Uangnya disimpan apa adanya, misalnya di bawah bantal. Nominalnya tetap; daya belinya turun sebesar inflasi.</dd>
+        <dt>Emas</dt>
+        <dd>
+          Uangnya dibelikan emas di tahun awal dengan harga rata-rata tahun itu, lalu dihargai lagi dengan harga rata-rata tahun
+          berikutnya. Harga emas rupiah per gram = harga emas dunia (US$ per troy ons) × kurs ÷ 31,1035.
+        </dd>
+        <dt>Dolar AS</dt>
+        <dd>Uangnya ditukar ke dolar dengan kurs rata-rata tahun awal, disimpan tanpa bunga, lalu ditukar kembali dengan kurs rata-rata tahun berikutnya.</dd>
+      </dl>
+      <p>
+        Hasil ketiganya dinyatakan dalam rupiah <span data-tahun-akhir>2025</span> (sudah disesuaikan inflasi), jadi garis
+        putus-putus di grafik, yaitu daya beli awal, adalah titik impas: di atasnya daya beli bertambah, di bawahnya berkurang.
+      </p>
+
+      <h2>Sumber data</h2>
+      <ul class="sumber">
+        <li>
+          <strong>Indeks Harga Konsumen</strong> (FP.CPI.TOTL), <strong>kurs resmi</strong> rupiah per dolar AS, rata-rata
+          tahunan (PA.NUS.FCRF), dan <strong>PDB per kapita</strong> rupiah berlaku (NY.GDP.PCAP.CN): World Bank, World
+          Development Indicators, Indonesia. Data dasar IHK berasal dari BPS. Diperbarui <span data-wdi>…</span>.
+        </li>
+        <li>
+          <strong>Harga emas</strong>, US$ per troy ons, rata-rata tahunan: World Bank Commodity Price Data (Pink Sheet),
+          <span data-pink>…</span>.
+        </li>
+      </ul>
+      <p>Data diambil ulang dengan <code>npm run data</code>; skripnya membaca API World Bank dan berkas Pink Sheet langsung.</p>
+
+      <h2>Batasannya</h2>
+      <ul>
+        <li>
+          <strong>Rata-rata nasional.</strong> IHK mengukur keranjang belanja rata-rata di kota-kota yang disurvei BPS. Harga di
+          kotamu, atau barang tertentu seperti rumah, pendidikan, dan bensin, bisa naik lebih cepat atau lebih lambat.
+        </li>
+        <li>
+          <strong>Angka tahunan.</strong> Semua seri memakai rata-rata setahun. Di tahun yang bergejolak seperti 1998, kurs dan
+          harga bisa berbeda jauh antara awal dan akhir tahun.
+        </li>
+        <li>
+          <strong>Tanpa biaya dan imbal hasil.</strong> Skenario emas dan dolar tidak memperhitungkan selisih harga jual-beli,
+          ongkos cetak, pajak, atau bunga deposito. Harga emas adalah harga dunia, bukan harga emas batangan di toko yang
+          biasanya sedikit lebih mahal.
+        </li>
+        <li>
+          <strong>Mulai 1967.</strong> Redenominasi 1965 (Rp1.000 lama menjadi Rp1 baru) dan hiperinflasi 1966 membuat angka
+          sebelumnya tidak bisa dibandingkan dengan rupiah sekarang secara bermakna.
+        </li>
+        <li>
+          <strong>Tahun terakhir <span data-tahun-akhir>2025</span>.</strong> Data tahunan World Bank baru lengkap setelah tahun
+          berjalan selesai.
+        </li>
+        <li>Ini alat bantu memahami inflasi, bukan saran investasi. Kinerja di masa lalu tidak menjamin hasil yang sama ke depan.</li>
+      </ul>
+    </main>
+
+    <footer class="kaki">
+      <p>Dibuat oleh Rafi Fernandito · <a href="https://github.com/Reverseflash45/dulu-segini">kode sumber</a></p>
+    </footer>
+    <script type="module" src="/src/metode.ts"></script>
+  </body>
+</html>

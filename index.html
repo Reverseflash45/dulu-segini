@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dulu Segini — berapa nilai rupiahmu sekarang?</title>
+    <meta
+      name="description"
+      content="Uang saku Rp500 tahun 1995 itu setara berapa sekarang? Hitung daya beli rupiah 1967–2025 dari Indeks Harga Konsumen, dan lihat apa jadinya kalau dulu disimpan tunai, ditukar dolar, atau dibelikan emas."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dulu Segini — berapa nilai rupiahmu sekarang?" />
+    <meta
+      property="og:description"
+      content="Daya beli rupiah 1967–2025: setara berapa sekarang, dan apa jadinya kalau dulu disimpan tunai, ditukar dolar, atau dibelikan emas."
+    />
+    <meta property="og:image" content="/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f6f1e4" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121915" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/ikon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="lewati" href="#hasil">Langsung ke hasil</a>
+    <header class="kepala">
+      <a class="merek" href="/" aria-label="Dulu Segini, beranda">
+        <span class="cap" aria-hidden="true">Rp</span>
+        <span>Dulu <em>Segini</em></span>
+      </a>
+      <nav class="navigasi">
+        <a href="/metode.html">Metode &amp; data</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="pembuka" aria-labelledby="judul">
+        <div class="kalimat">
+          <p class="label">Daya beli rupiah, 1967–<span data-tahun-akhir>2025</span></p>
+          <h1 id="judul" class="sr-only">Hitung nilai rupiah dulu dan sekarang</h1>
+
+          <div class="arah" role="radiogroup" aria-label="Arah perhitungan">
+            <button type="button" role="radio" aria-checked="true" data-arah="maju">Dulu → sekarang</button>
+            <button type="button" role="radio" aria-checked="false" data-arah="mundur">Sekarang → dulu</button>
+          </div>
+
+          <form class="isian" id="isian" autocomplete="off">
+            <p class="baris-isian">
+              <label class="isi-nominal">
+                <span class="sr-only">Nominal</span>
+                <span class="awalan" aria-hidden="true">Rp</span>
+                <input id="nominal" name="nominal" inputmode="decimal" value="1.000" aria-describedby="galat-nominal" />
+              </label>
+              <span class="kata" data-kata-tahun>tahun</span>
+              <label class="isi-tahun">
+                <span class="sr-only">Tahun</span>
+                <select id="tahun" name="tahun"></select>
+              </label>
+            </p>
+            <p id="galat-nominal" class="galat" role="alert" hidden>Tulis nominal seperti 1.000, 25.000, 1,5 juta, atau 500rb.</p>
+            <div class="cepat" aria-label="Nominal cepat">
+              <button type="button" data-cepat="100">Rp100</button>
+              <button type="button" data-cepat="1000">Rp1.000</button>
+              <button type="button" data-cepat="10000">Rp10.000</button>
+              <button type="button" data-cepat="100000">Rp100.000</button>
+              <button type="button" data-cepat="1000000">Rp1 juta</button>
+            </div>
+            <label class="geser">
+              <span class="sr-only">Geser tahun</span>
+              <input id="geser-tahun" type="range" />
+              <span class="ujung" aria-hidden="true"><span data-tahun-awal>1967</span><span data-tahun-akhir>2025</span></span>
+            </label>
+          </form>
+
+          <div class="hasil" id="hasil" aria-live="polite">
+            <p class="setara-label" data-setara-label>setara dengan</p>
+            <p class="angka-besar" data-angka-besar>Rp9.080</p>
+            <p class="setara-sub" data-setara-sub>di tahun 2025</p>
+            <p class="konteks" data-konteks></p>
+          </div>
+        </div>
+
+        <figure class="uang" aria-label="Kartu hasil">
+          <div class="lembar" id="lembar">
+            <svg class="guilloche" aria-hidden="true"></svg>
+            <div class="lembar-isi">
+              <div class="lembar-atas">
+                <span class="lembar-merek">DULU SEGINI</span>
+                <span class="lembar-seri" data-seri>DS · 1995 · 2025</span>
+              </div>
+              <div class="lembar-tengah">
+                <div class="lembar-sisi">
+                  <span class="lembar-tahun" data-kiri-tahun>1995</span>
+                  <span class="lembar-nilai" data-kiri-nilai>Rp1.000</span>
+                </div>
+                <span class="lembar-panah" aria-hidden="true">=</span>
+                <div class="lembar-sisi kanan">
+                  <span class="lembar-tahun" data-kanan-tahun>2025</span>
+                  <span class="lembar-nilai" data-kanan-nilai>Rp9.080</span>
+                </div>
+              </div>
+              <div class="lembar-bawah">
+                <span data-lembar-catatan>harga rata-rata naik 9,1×</span>
+                <span data-domain>dulu segini</span>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <button type="button" class="tombol" id="unduh">Simpan gambar</button>
+            <button type="button" class="tombol polos" id="salin">Salin tautan</button>
+            <span class="status-salin" role="status"></span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="bagian" aria-labelledby="judul-skenario">
+        <div class="kepala-bagian">
+          <p class="label" data-label-skenario>Kalau Rp1.000 itu disimpan sejak 1995</p>
+          <h2 id="judul-skenario">Tunai, dolar, atau <em>emas?</em></h2>
+          <p class="pengantar">
+            Semua nilai dihitung ulang ke rupiah <span data-tahun-akhir>2025</span>, jadi yang dibandingkan adalah
+            daya belinya, bukan angkanya.
+          </p>
+        </div>
+
+        <ul class="ubin" data-ubin></ul>
+
+        <div class="grafik-bingkai">
+          <div class="grafik-alat">
+            <ul class="legenda" data-legenda-skenario></ul>
+            <button type="button" class="tombol polos kecil" data-tabel-tombol="skenario" aria-expanded="false">Lihat tabel</button>
+          </div>
+          <div class="grafik" id="grafik-skenario" role="img"></div>
+          <div class="tabel-bungkus" data-tabel="skenario" hidden></div>
+        </div>
+      </section>
+
+      <section class="bagian" aria-labelledby="judul-inflasi">
+        <div class="kepala-bagian">
+          <p class="label">Inflasi harga konsumen per tahun</p>
+          <h2 id="judul-inflasi">Tahun-tahun yang <em>paling mahal</em></h2>
+          <p class="pengantar" data-pengantar-inflasi></p>
+        </div>
+        <div class="grafik-bingkai">
+          <div class="grafik-alat">
+            <span class="catatan-grafik" data-catatan-inflasi></span>
+            <button type="button" class="tombol polos kecil" data-tabel-tombol="inflasi" aria-expanded="false">Lihat tabel</button>
+          </div>
+          <div class="grafik" id="grafik-inflasi" role="img"></div>
+          <div class="tabel-bungkus" data-tabel="inflasi" hidden></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="kaki">
+      <p>
+        Data: World Bank — Indeks Harga Konsumen, kurs resmi, dan PDB per kapita Indonesia (World Development Indicators,
+        diperbarui <span data-wdi>…</span>), serta harga emas tahunan (Pink Sheet). Angka adalah rata-rata nasional per tahun.
+        <a href="/metode.html">Cara menghitung dan batasannya →</a>
+      </p>
+      <p>Dibuat oleh Rafi Fernandito · <a href="https://github.com/Reverseflash45/dulu-segini">kode sumber</a></p>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

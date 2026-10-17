@@ -1,0 +1,61 @@
+.metode {
+  max-width: 720px;
+  padding: clamp(32px, 6vw, 64px) 0 0;
+}
+.metode h1 {
+  margin: 8px 0 0;
+  font: 500 clamp(40px, 7vw, 72px) / 1 var(--huruf-judul);
+  font-variation-settings: "opsz" 144, "SOFT" 30;
+  letter-spacing: -0.02em;
+}
+.metode h1 em {
+  color: var(--hijau);
+  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+}
+.metode h2 {
+  margin-top: 48px;
+  font-size: clamp(26px, 4vw, 34px);
+}
+.metode .lead {
+  margin-top: 20px;
+  font: 400 21px/1.5 var(--huruf-judul);
+  font-variation-settings: "opsz" 24;
+  color: var(--tinta-2);
+}
+.metode p,
+.metode li,
+.metode dd {
+  max-width: 66ch;
+}
+.metode ul {
+  padding-left: 20px;
+}
+.metode li {
+  margin-bottom: 10px;
+}
+.rumus {
+  margin: 16px 0;
+  padding: 18px 20px;
+  border: 1px solid var(--garis);
+  border-left: 3px solid var(--hijau);
+  border-radius: 6px;
+  background: var(--kertas-2);
+  font: 400 16px/1.6 var(--huruf-mono);
+}
+.rumus p {
+  margin: 0;
+}
+.daftar-skenario dt {
+  margin-top: 14px;
+  font-weight: 600;
+}
+.daftar-skenario dd {
+  margin: 4px 0 0;
+  color: var(--tinta-2);
+}
+code {
+  font: 400 0.92em var(--huruf-mono);
+  background: var(--kertas-2);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
