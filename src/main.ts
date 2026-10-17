@@ -64,7 +64,10 @@ function setelIsian() {
   lebarNominal();
   pilihTahun.value = String(k.tahun);
   geserTahun.value = String(k.tahun);
-  $$<HTMLButtonElement>("[data-arah]").forEach((b) => b.setAttribute("aria-checked", String(b.dataset.arah === k.arah)));
+  $$<HTMLButtonElement>("[data-arah]").forEach((b) => {
+    b.setAttribute("aria-checked", String(b.dataset.arah === k.arah));
+    b.tabIndex = b.dataset.arah === k.arah ? 0 : -1;
+  });
   $$<HTMLButtonElement>("[data-cepat]").forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.cepat) === k.nominal)));
   isi("[data-kata-tahun]", k.arah === "maju" ? "tahun" : "sekarang, di tahun");
 }
