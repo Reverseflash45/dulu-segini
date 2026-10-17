@@ -87,7 +87,17 @@ masukNominal.addEventListener("focus", () => masukNominal.select());
 pilihTahun.addEventListener("change", () => perbarui({ tahun: Number(pilihTahun.value) }));
 geserTahun.addEventListener("input", () => perbarui({ tahun: Number(geserTahun.value) }));
 $$<HTMLButtonElement>("[data-cepat]").forEach((b) => b.addEventListener("click", () => perbarui({ nominal: Number(b.dataset.cepat) })));
-$$<HTMLButtonElement>("[data-arah]").forEach((b) => b.addEventListener("click", () => perbarui({ arah: b.dataset.arah as Arah })));
+$$<HTMLButtonElement>("[data-arah]").forEach((b) => {
+  b.addEventListener("click", () => perbarui({ arah: b.dataset.arah as Arah }));
+  // Grup radio: panah berpindah pilihan, hanya pilihan aktif yang bisa di-tab.
+  b.addEventListener("keydown", (e) => {
+    if (!["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(e.key)) return;
+    e.preventDefault();
+    const arah: Arah = k.arah === "maju" ? "mundur" : "maju";
+    perbarui({ arah });
+    $<HTMLButtonElement>(`[data-arah="${arah}"]`).focus();
+  });
+});
 $("#isian").addEventListener("submit", (e) => e.preventDefault());
 
 /* ---------- hasil ---------- */
