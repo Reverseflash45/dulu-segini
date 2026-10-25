@@ -4,13 +4,11 @@
 }
 .metode h1 {
   margin: 8px 0 0;
-  font: 500 clamp(40px, 7vw, 72px) / 1 var(--huruf-judul);
-  font-variation-settings: "opsz" 144, "SOFT" 30;
+  font: 700 clamp(44px, 7vw, 72px) / 1 var(--huruf-kapur);
   letter-spacing: -0.02em;
 }
 .metode h1 em {
-  color: var(--hijau);
-  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+  color: var(--kuning);
 }
 .metode h2 {
   margin-top: 48px;
@@ -18,9 +16,8 @@
 }
 .metode .lead {
   margin-top: 20px;
-  font: 400 21px/1.5 var(--huruf-judul);
-  font-variation-settings: "opsz" 24;
-  color: var(--tinta-2);
+  font: 400 20px/1.55 var(--huruf-teks);
+  color: var(--kapur-2);
 }
 .metode p,
 .metode li,
@@ -36,11 +33,11 @@
 .rumus {
   margin: 16px 0;
   padding: 18px 20px;
-  border: 1px solid var(--garis);
-  border-left: 3px solid var(--hijau);
+  border: 1px solid var(--debu);
+  border-left: 3px solid var(--kuning);
   border-radius: 6px;
-  background: var(--kertas-2);
-  font: 400 16px/1.6 var(--huruf-mono);
+  background: rgb(0 0 0 / 0.16);
+  font: 400 16px/1.6 var(--huruf-teks);
 }
 .rumus p {
   margin: 0;
@@ -51,11 +48,11 @@
 }
 .daftar-skenario dd {
   margin: 4px 0 0;
-  color: var(--tinta-2);
+  color: var(--kapur-2);
 }
 code {
-  font: 400 0.92em var(--huruf-mono);
-  background: var(--kertas-2);
+  font: 400 0.92em var(--huruf-teks);
+  background: rgb(0 0 0 / 0.16);
   padding: 1px 5px;
   border-radius: 4px;
 }

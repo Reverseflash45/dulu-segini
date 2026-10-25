@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#1d5640"/>
-  <circle cx="32" cy="32" r="21" fill="none" stroke="#f3ecd8" stroke-width="2.5"/>
-  <circle cx="32" cy="32" r="16.5" fill="none" stroke="#f3ecd8" stroke-width="1" opacity=".6"/>
-  <text x="32" y="38.5" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#ffe9a8">Rp</text>
+  <rect width="64" height="64" rx="12" fill="#7a5532"/>
+  <rect x="6" y="6" width="52" height="52" rx="4" fill="#22392e"/>
+  <text x="32" y="40" text-anchor="middle" font-family="'Comic Sans MS', cursive" font-size="22" font-weight="700" fill="#f4d35e">Rp</text>
+  <rect x="38" y="51" width="14" height="4" rx="2" fill="#f1efe6"/>
 </svg>

@@ -2,7 +2,6 @@ import "./gaya.css";
 import { toPng } from "html-to-image";
 import { angka, bacaNominal, desimal, dolar, gram, kali, persen, rupiah, rupiahRingkas } from "./format";
 import { SERI, grafikInflasi, grafikSkenario } from "./grafik";
-import { polaGuilloche } from "./guilloche";
 import { SEMUA, SUMBER, TAHUN_AKHIR, TAHUN_AWAL, adaTahun, mundur, perjalanan, ringkas, type Skenario } from "./model";
 
 type Arah = "maju" | "mundur";
@@ -125,7 +124,7 @@ function render() {
   isi("[data-kiri-nilai]", rupiahRingkas(awal));
   isi("[data-kanan-tahun]", String(TAHUN_AKHIR));
   isi("[data-kanan-nilai]", rupiahRingkas(sekarang));
-  isi("[data-seri]", `DS · ${tahun} · ${TAHUN_AKHIR}`);
+  isi("[data-seri]", `${tahun} vs ${TAHUN_AKHIR}`);
   isi("[data-lembar-catatan]", `harga rata-rata naik ${kali(r.kelipatan)}`);
 
   // Ubin skenario.
@@ -169,7 +168,7 @@ function render() {
   const sejak = SEMUA.filter((b) => b.tahun > tahun);
   const tertinggi = sejak.reduce((a, b) => (b.inflasi > a.inflasi ? b : a), sejak[0]);
   $("[data-pengantar-inflasi]").textContent = sejak.length
-    ? `Batang hijau adalah tahun-tahun setelah ${tahun}. Yang paling mahal di antaranya ${tertinggi.tahun}, saat harga naik ${persen(tertinggi.inflasi)} dalam setahun.`
+    ? `Batang kuning adalah tahun-tahun setelah ${tahun}. Yang paling mahal di antaranya ${tertinggi.tahun}, saat harga naik ${persen(tertinggi.inflasi)} dalam setahun.`
     : "";
   isi("[data-catatan-inflasi]", "Batang di atas 60% dipotong; angkanya tertulis di atasnya.");
   const gi = $("#grafik-inflasi");
@@ -223,8 +222,7 @@ new ResizeObserver(([e]) => {
   }
 }).observe($("#grafik-skenario"));
 
-/* ---------- kartu uang ---------- */
-$("svg.guilloche").outerHTML = polaGuilloche().replace("<svg ", '<svg class="guilloche" aria-hidden="true" ');
+/* ---------- papan harga ---------- */
 
 const status = $(".status-salin");
 $("#unduh").addEventListener("click", async () => {

@@ -110,12 +110,12 @@ export function grafikSkenario(wadah: HTMLElement, data: TitikSkenario[], acuan:
     ${SERI.map((s) => `<path d="${garis(s.kunci)}" fill="none" stroke="${s.warna}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`).join("")}
     ${SERI.map(
       (s, i) => `
-      <circle cx="${x(akhir.tahun)}" cy="${y(akhir[s.kunci])}" r="4" fill="${s.warna}" stroke="var(--kertas)" stroke-width="2"/>
+      <circle cx="${x(akhir.tahun)}" cy="${y(akhir[s.kunci])}" r="4" fill="${s.warna}" stroke="var(--papan)" stroke-width="2"/>
       <text class="label-ujung" x="${x(akhir.tahun) + 10}" y="${yLabel[i] - 2}">${s.nama}<tspan class="angka" x="${x(akhir.tahun) + 10}" dy="15">${esc(rupiahRingkas(akhir[s.kunci]))}</tspan></text>`,
     ).join("")}
     <g class="hover" visibility="hidden">
       <line class="silang" y1="${m.atas}" y2="${tinggi - m.bawah}"/>
-      ${SERI.map((s) => `<circle data-titik="${s.kunci}" r="4.5" fill="${s.warna}" stroke="var(--kertas)" stroke-width="2"/>`).join("")}
+      ${SERI.map((s) => `<circle data-titik="${s.kunci}" r="4.5" fill="${s.warna}" stroke="var(--papan)" stroke-width="2"/>`).join("")}
     </g>
     <rect class="area-hover" x="${m.kiri}" y="${m.atas}" width="${lebar - m.kanan - m.kiri}" height="${tinggi - m.atas - m.bawah}" fill="transparent"/>
   </svg>`;
@@ -179,7 +179,7 @@ export function grafikInflasi(wadah: HTMLElement, data: readonly Baris[], mulai:
       const v = Math.min(d.inflasi, BATAS);
       const x0 = x(d.tahun)!;
       const aktif = d.tahun >= mulai;
-      const warna = aktif ? "var(--hijau)" : "var(--garis-kuat)";
+      const warna = aktif ? "var(--kuning)" : "var(--debu-kuat)";
       if (v >= 0) {
         const yy = y(v);
         const h = y(0) - yy;
@@ -188,7 +188,7 @@ export function grafikInflasi(wadah: HTMLElement, data: readonly Baris[], mulai:
         const d0 = `M${x0},${y(0)}V${yy + rr}Q${x0},${yy} ${x0 + rr},${yy}H${x0 + w - rr}Q${x0 + w},${yy} ${x0 + w},${yy + rr}V${y(0)}Z`;
         const potong =
           d.inflasi > BATAS
-            ? `<path d="M${x0 - 1},${yy + 7}l${w + 2},-4M${x0 - 1},${yy + 11}l${w + 2},-4" stroke="var(--kertas)" stroke-width="2"/>`
+            ? `<path d="M${x0 - 1},${yy + 7}l${w + 2},-4M${x0 - 1},${yy + 11}l${w + 2},-4" stroke="var(--papan)" stroke-width="2"/>`
             : "";
         return `<path d="${d0}" fill="${warna}"/>${potong}`;
       }
@@ -212,9 +212,10 @@ export function grafikInflasi(wadah: HTMLElement, data: readonly Baris[], mulai:
     ${batang}
     ${
       diatas.length
-        ? `<text class="anotasi" x="${x(diatas.at(-1)!.tahun)! + w + 6}" y="${y(BATAS) + 10}">${esc(
-            diatas.map((d) => `${d.tahun}: ${persen(d.inflasi)}`).join(" · "),
-          )}</text>`
+        ? `<text class="anotasi" y="${y(BATAS) + 10}">${diatas
+            // Satu baris per tahun, supaya tidak menabrak label krisis di layar sempit.
+            .map((d, i) => `<tspan x="${x(diatas.at(-1)!.tahun)! + w + 6}" dy="${i ? 15 : 0}">${esc(`${d.tahun}: ${persen(d.inflasi)}`)}</tspan>`)
+            .join("")}</text>`
         : ""
     }
     ${krisis ? `<text class="anotasi" x="${x(1998)! + w / 2}" y="${y(Math.min(krisis.inflasi, BATAS)) - 8}" text-anchor="middle">krisis moneter · ${esc(persen(krisis.inflasi))}</text>` : ""}
@@ -235,7 +236,7 @@ export function grafikInflasi(wadah: HTMLElement, data: readonly Baris[], mulai:
       (x(d.tahun)! + w / 2) * skala,
       y(Math.min(Math.max(d.inflasi, 0), BATAS)) * skala,
       `<p class="tip-judul">${d.tahun}</p>
-       <div class="tip-baris"><i style="background:var(--hijau)"></i><span>Inflasi</span><b>${esc(persen(d.inflasi))}</b></div>
+       <div class="tip-baris"><i style="background:var(--kuning)"></i><span>Inflasi</span><b>${esc(persen(d.inflasi))}</b></div>
        <div class="tip-baris"><i></i><span>Kurs</span><b>Rp${Math.round(d.kurs).toLocaleString("id-ID")}/US$</b></div>`,
     );
   };

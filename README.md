@@ -19,11 +19,10 @@ bukan angka.
 
 - Dua arah: *dulu → sekarang* dan *sekarang → dulu*.
 - Nominal bisa diketik bebas: `1.000`, `25.000`, `1,5 juta`, `500rb`, `2jt`.
-- Kartu hasil bergaya uang kertas lama (pola guilloche digambar sendiri), bisa disimpan
-  sebagai PNG. Setiap hasil punya tautan sendiri (`?rp=1000&th=1995`).
+- Tampilan papan kapur harga di warung; kartu hasil berupa papan harga berbingkai kayu,
+  bisa disimpan sebagai PNG. Setiap hasil punya tautan sendiri (`?rp=1000&th=1995`).
 - Grafik nilai riil tiga skenario (skala logaritmik) dan grafik inflasi per tahun,
   masing-masing dengan tooltip dan tampilan tabel.
-- Mode gelap mengikuti sistem.
 
 ## Data
 
@@ -47,10 +46,9 @@ Butuh `openpyxl` untuk membaca berkas Pink Sheet.
 
 ## Warna grafik
 
-Tiga warna seri (tunai biru, emas oranye, dolar hijau toska) divalidasi untuk buta
-warna terhadap latar terang dan gelap: ΔE CVD terburuk 9,2 (terang) dan 9,4 (gelap)
-untuk semua pasangan. Dua warna di mode terang di bawah 3:1 terhadap latar, jadi
-setiap garis diberi label langsung dan ada tampilan tabel.
+Tiga warna kapur (tunai pink #dc5f84, emas oker #b58a12, dolar biru #4a96d8)
+divalidasi untuk buta warna di atas papan #22392e: ΔE CVD terburuk 10,6, semua
+≥ 3:1 terhadap latar. Setiap garis tetap diberi label langsung dan ada tampilan tabel.
 
 ## Menjalankan
 
