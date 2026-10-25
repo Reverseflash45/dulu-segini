@@ -2,7 +2,7 @@
 
 ![Dulu Segini: Rp1.000 tahun 1995 setara Rp9.080 di 2025](public/og.png)
 
-**[Buka kalkulatornya](https://dulu-segini.vercel.app)**
+**[Buka kalkulatornya](https://dulu.raffstw.my.id)**
 
 Uang saku Rp500 tahun 1995 itu setara berapa sekarang? Dulu Segini menghitung daya beli
 rupiah dari tahun ke tahun (1967–2025) dengan Indeks Harga Konsumen, lalu
@@ -36,7 +36,7 @@ bukan angka.
 
 Inflasi tahunan dihitung dari IHK yang sama, bukan diambil dari seri terpisah, supaya
 semua angka konsisten. Mulai 1967 karena redenominasi 1965 dan hiperinflasi 1966.
-Rumus, asumsi, dan batasannya ada di [halaman metode](https://dulu-segini.vercel.app/metode.html).
+Rumus, asumsi, dan batasannya ada di [halaman metode](https://dulu.raffstw.my.id/metode.html).
 
 ```
 python data/skrip/ambil.py            # unduh ulang dari World Bank → src/data/seri.json
