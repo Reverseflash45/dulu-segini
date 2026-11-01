@@ -219,8 +219,7 @@ main,
 }
 .isi-nominal input {
   width: 6.2ch;
-  /* lebar mengikuti isinya sejak gambar pertama (skrip menyetel lebar yang sama untuk peramban lain) */
-  field-sizing: content;
+
   min-width: 3ch;
   border: 0;
   background: none;
@@ -712,5 +711,13 @@ main,
   }
   .lembar:hover {
     transform: rotate(0deg);
+  }
+}
+
+/* lebar kotak nominal mengikuti isinya sejak gambar pertama; peramban lain memakai lebar dari skrip */
+@supports (field-sizing: content) {
+  .isi-nominal input {
+    field-sizing: content;
+    width: auto;
   }
 }

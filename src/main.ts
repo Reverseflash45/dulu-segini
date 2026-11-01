@@ -57,7 +57,9 @@ const ukur = document.createElement("span");
 ukur.className = "ukur";
 ukur.setAttribute("aria-hidden", "true");
 masukNominal.after(ukur);
+const ikutIsi = typeof CSS !== "undefined" && CSS.supports("field-sizing", "content");
 const lebarNominal = () => {
+  if (ikutIsi) return; // CSS field-sizing sudah menyesuaikan lebarnya
   ukur.textContent = masukNominal.value || "0";
   masukNominal.style.width = `${ukur.offsetWidth + 4}px`;
 };
@@ -199,6 +201,8 @@ function perbarui(ubah: Partial<Keadaan>, setel = true) {
   else {
     pilihTahun.value = String(k.tahun);
     geserTahun.value = String(k.tahun);
+    // nominal yang diketik juga menentukan chip mana yang tersorot
+    $$<HTMLButtonElement>("[data-cepat]").forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.cepat) === k.nominal)));
   }
   cancelAnimationFrame(tunda);
   tunda = requestAnimationFrame(() => {
