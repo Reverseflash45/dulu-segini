@@ -219,6 +219,8 @@ main,
 }
 .isi-nominal input {
   width: 6.2ch;
+  /* lebar mengikuti isinya sejak gambar pertama (skrip menyetel lebar yang sama untuk peramban lain) */
+  field-sizing: content;
   min-width: 3ch;
   border: 0;
   background: none;

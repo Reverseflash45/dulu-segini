@@ -38,7 +38,12 @@ const pilihTahun = $<HTMLSelectElement>("#tahun");
 const geserTahun = $<HTMLInputElement>("#geser-tahun");
 const galat = $("#galat-nominal");
 
-for (let t = TAHUN_AKHIR - 1; t >= TAHUN_AWAL; t--) pilihTahun.add(new Option(String(t), String(t)));
+// Pilihan tahun sudah ditulis di index.html (supaya kalimat isian tidak patah baris saat skrip berjalan);
+// dibangun ulang hanya bila rentang datanya berubah.
+if (pilihTahun.options.length !== TAHUN_AKHIR - TAHUN_AWAL || pilihTahun.options[0]?.value !== String(TAHUN_AKHIR - 1)) {
+  pilihTahun.replaceChildren();
+  for (let t = TAHUN_AKHIR - 1; t >= TAHUN_AWAL; t--) pilihTahun.add(new Option(String(t), String(t)));
+}
 geserTahun.min = String(TAHUN_AWAL);
 geserTahun.max = String(TAHUN_AKHIR - 1);
 isi("[data-tahun-awal]", String(TAHUN_AWAL));
