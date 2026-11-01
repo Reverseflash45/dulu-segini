@@ -336,9 +336,14 @@ main,
 .setara-sub {
   margin-top: 8px;
 }
+.hasil {
+  container-type: inline-size;
+}
 .angka-besar {
   margin: 2px 0 0;
-  font: 700 clamp(58px, 10vw, 108px) / 0.95 var(--huruf-kapur);
+  /* angka panjang (Rp4.996.373) diperkecil mengikuti lebar kolom supaya tetap satu baris; huruf kapur ~0,6em */
+  font: 700 min(clamp(58px, 10vw, 108px), calc(100cqw / (var(--n, 7) * 0.6))) / 0.95 var(--huruf-kapur);
+
   color: var(--kuning);
   font-variant-numeric: lining-nums tabular-nums;
   overflow-wrap: anywhere;

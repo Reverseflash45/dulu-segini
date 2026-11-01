@@ -119,6 +119,8 @@ function render() {
 
   isi("[data-setara-label]", "setara dengan");
   isi("[data-angka-besar]", rupiah(arah === "maju" ? r.setaraSekarang : awal));
+  $("[data-angka-besar]").style.setProperty("--n", String(rupiah(arah === "maju" ? r.setaraSekarang : awal).length));
+
   isi("[data-setara-sub]", arah === "maju" ? `di tahun ${TAHUN_AKHIR}` : `di tahun ${tahun}`);
   $("[data-konteks]").innerHTML =
     `Harga rata-rata naik <strong>${kali(r.kelipatan)}</strong> dari ${tahun} ke ${TAHUN_AKHIR}, ` +
