@@ -11,7 +11,6 @@
     "data": "python data/skrip/ambil.py"
   },
   "dependencies": {
-    "@fontsource/cabin-sketch": "^5.3.0",
     "@fontsource/lexend": "^5.3.0",
     "d3-scale": "^4.0.2",
     "d3-selection": "^3.0.0",

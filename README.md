@@ -50,6 +50,16 @@ Tiga warna kapur (tunai pink #dc5f84, emas oker #b58a12, dolar biru #4a96d8)
 divalidasi untuk buta warna di atas papan #22392e: ΔE CVD terburuk 10,6, semua
 ≥ 3:1 terhadap latar. Setiap garis tetap diberi label langsung dan ada tampilan tabel.
 
+## Huruf
+
+Cabin Sketch disimpan sendiri di `src/huruf/`, dipangkas ke ASCII dan beberapa tanda baca supaya
+±40% lebih ringan (guratan kapurnya berat). Untuk membuat ulang dari berkas Fontsource:
+
+```
+pip install fonttools brotli
+pyftsubset cabin-sketch-latin-700-normal.woff2 --flavor=woff2 --layout-features='*'   --unicodes="U+0020-007E,U+00A0,U+00D7,U+2013,U+2014,U+2018,U+2019,U+201C,U+201D,U+2026,U+2190,U+2192"   --output-file=src/huruf/cabin-sketch-700.woff2
+```
+
 ## Menjalankan
 
 ```
