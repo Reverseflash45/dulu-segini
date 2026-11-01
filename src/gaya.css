@@ -421,9 +421,11 @@ main,
 }
 .lembar-nilai {
   margin-top: 1.2cqw;
-  font: 700 9cqw/0.95 var(--huruf-kapur);
+  /* tiap kolom ~35cqw; satu huruf kapur ~0,6em, jadi ukuran mengikuti jumlah huruf (--n diisi skrip) */
+  font: 700 min(9cqw, calc(35cqw / (var(--n, 7) * 0.6))) / 0.95 var(--huruf-kapur);
   overflow-wrap: anywhere;
 }
+
 .lembar-sisi.kanan .lembar-nilai {
   color: var(--kuning);
 }

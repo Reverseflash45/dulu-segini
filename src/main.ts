@@ -131,6 +131,9 @@ function render() {
   isi("[data-kiri-nilai]", rupiahRingkas(awal));
   isi("[data-kanan-tahun]", String(TAHUN_AKHIR));
   isi("[data-kanan-nilai]", rupiahRingkas(sekarang));
+  // Angka panjang (Rp249.819) diperkecil supaya tetap satu baris di kolomnya.
+  $("#lembar").style.setProperty("--n", String(Math.max(rupiahRingkas(awal).length, rupiahRingkas(sekarang).length)));
+
   isi("[data-seri]", `${tahun} vs ${TAHUN_AKHIR}`);
   isi("[data-lembar-catatan]", `harga rata-rata naik ${kali(r.kelipatan)}`);
 
